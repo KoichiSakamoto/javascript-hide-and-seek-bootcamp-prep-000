@@ -21,8 +21,8 @@ function deepestChild(){
   var returnNode;
   
   while (current.firstChild != undefined) {
-    current = current.firstChild;
-    next = current.children
+    current = current.children[0];
+    next = current.children[0];
   }
   returnNode = current;
   return returnNode;
